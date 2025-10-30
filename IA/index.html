@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <div class="currency">
+                <span id="points">0</span> 💰
+            </div>
+        </header>
+        
+        <main>
+            <div class="click-area">
+                <img src="assets/minecraft-block.png" id="clickable" alt="Bloc Minecraft">
+            </div>
+
+            <div class="shop-container">
+                <div class="shop-section">
+                    <h2>Bâtiments</h2>
+                    <div class="shop-items" id="buildings">
+                        <!-- Les bâtiments seront ajoutés ici dynamiquement -->
+                    </div>
+                </div>
+
+                <div class="shop-section">
+                    <h2>Offres</h2>
+                    <div class="offers">
+                        <div class="offer" id="weekly-offer">
+                            <h3>Offre de la semaine</h3>
+                            <div class="offer-content"></div>
+                        </div>
+                        <div class="offer" id="daily-offer">
+                            <h3>Offre du jour</h3>
+                            <div class="offer-content"></div>
+                        </div>
+                        <div class="offer" id="job-offer">
+                            <h3>Offre métier</h3>
+                            <div class="offer-content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-section">
+                    <h2>Améliorations</h2>
+                    <div class="shop-items" id="upgrades">
+                        <!-- Les améliorations seront ajoutées ici dynamiquement -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
